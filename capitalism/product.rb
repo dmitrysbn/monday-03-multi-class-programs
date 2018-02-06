@@ -14,17 +14,7 @@ class Product
     @base_price
   end
 
-  def base_price
-    @base_price
-  end
-
   def total_price
     total_price = @base_price * @tax_rate
   end
-
-
 end
-
-
-apples = Product.new('apple', 5, 1.13)
-puts apples.total_price
