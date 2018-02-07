@@ -12,7 +12,7 @@ class Cart
   end
 
   def how_many(product)
-    #go through list @products of products and count how many matches
+    # go through list @products of products and count how many matches
     running_total = 0
     @products.each do |item|
       if item.name == product.name
@@ -57,7 +57,6 @@ class Cart
     most_expensive_index = product_numbers.find_index(most_expensive_price)
     return @products[most_expensive_index]
   end
-
 
 end
 
