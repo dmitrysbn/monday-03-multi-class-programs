@@ -32,6 +32,6 @@ class Product
   end
 
   def total_price
-    total_price = @base_price * @tax_rate
+    @base_price * @tax_rate
   end
 end
